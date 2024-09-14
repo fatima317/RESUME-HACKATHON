@@ -1,0 +1,155 @@
+/* Header Section */
+header {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 4px solid #1a5276;
+    display: flex;
+}
+header img {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+}
+header div {
+    display: flex;
+    flex-direction: column; /* Stack name and email vertically */
+    justify-content: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    font-size: 1.1em;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+h1, h2, h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+h1 {
+    font-size: 2.5em;
+    margin-top: 20px;
+    text-align: center;
+}
+h2, h3 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+h3 {
+    font-size: 1.4em;
+}
+
+p, li {
+    line-height: 1.6;
+}
+
+ul {
+    padding-left: 20px;
+}
+a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+}
+.hidden {
+    display: none;
+}
+
+/* Section Styles */
+section ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 8px;
+}
+
+/* Skills Tables */
+section ul.skills {
+    list-style: none;
+    padding: 0;
+}
+
+section ul.skills li {
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #3498db;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+section ul.skills li:hover {
+    background-color: #1a5276;
+}
+
+/* Work Experience Section */
+section ul.experience li {
+    background-color: #ecf0f1;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 4px solid #2980b9;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+        flex-direction: column; /* Stack the image and text on smaller screens */
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2, h3 {
+        font-size: 1.4em;
+    }
+
+    section {
+        width: 95%;
+    }
+
+    header img {
+        margin-bottom: 10px;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+}
